@@ -1,0 +1,31 @@
+{
+    "tables": [
+      {
+        "name": "Students",
+        "columns": [
+          { "name": "StudentID", "type": "INT", "isPrimaryKey": true },
+          { "name": "Name", "type": "VARCHAR(100)" },
+          { "name": "Age", "type": "INT" },
+          { "name": "Major", "type": "VARCHAR(100)" }
+        ]
+      },
+      {
+        "name": "Courses",
+        "columns": [
+          { "name": "CourseID", "type": "INT", "isPrimaryKey": true },
+          { "name": "CourseName", "type": "VARCHAR(100)" },
+          { "name": "Credits", "type": "INT" }
+        ]
+      },
+      {
+        "name": "Enrollments",
+        "columns": [
+          { "name": "EnrollmentID", "type": "INT", "isPrimaryKey": true },
+          { "name": "StudentID", "type": "INT", "references": "Students.StudentID" },
+          { "name": "CourseID", "type": "INT", "references": "Courses.CourseID" },
+          { "name": "Grade", "type": "VARCHAR(2)" }
+        ]
+      }
+    ]
+  }
+  

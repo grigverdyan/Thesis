@@ -1,0 +1,20 @@
+<OMOBJ>
+  <OMA>
+    <OMS cd="university" name="schema"/>
+    <OMA>
+      <OMS cd="set1" name="set"/>
+      <OMV name="S"/>
+    </OMA>
+    <OMA>
+      <OMS cd="set1" name="set"/>
+      <OMV name="C"/>
+    </OMA>
+    <OMA>
+      <OMS cd="set1" name="relation"/>
+      <OMV name="E"/>
+      <OMV name="S"/>
+      <OMV name="C"/>
+      <OMV name="Grade"/>
+    </OMA>
+  </OMA>
+</OMOBJ>
